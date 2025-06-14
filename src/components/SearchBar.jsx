@@ -2,6 +2,7 @@ import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useCart } from "../contexts/CartContext";
 import { useState } from "react";
+import CartIcon from "./CartIcon";
 
 import "../styles/SearchBar.css";
 
@@ -30,12 +31,7 @@ return (
             </button>
         </form>
         <Link to="/cart">
-            <div className="cart-icon-container">
-                <button className="cart-button">
-                    <FiShoppingCart size={40} />
-                </button>
-                <span className="cart-badge">{cart.length}</span>
-            </div>
+            <CartIcon /> 
         </Link>
     </div>
 )

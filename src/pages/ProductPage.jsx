@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import RedirectArrow from '../components/RedirectArrow'
 import ProductDetails from '../components/ProductDetails'
+import CartIcon from '../components/CartIcon'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import api from '../api'
@@ -31,7 +32,10 @@ function ProductPage() {
   return (
       <div className='main-container'>
         <Header title="Pagina de Produto" />
-        <RedirectArrow />
+        <div className='product-page-header'>
+          <RedirectArrow/>
+          <CartIcon />
+        </div>
         <ProductDetails product={product} loading={loading}/>
       </div>
   )

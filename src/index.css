@@ -19,6 +19,14 @@ body {
     align-items: center;
 }
 
+.product-page-header {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 768px) {
   .product-container {
     width: 100%;
@@ -30,12 +38,17 @@ body {
 
   .cart-icon-container {
     position: fixed !important;
-    bottom: 50px;
-    right: 50px;
+    bottom: 60px;
+    right: 60px;
     z-index: 1000;
     background-color: white;
     border-radius: 50px;
     border: 3px solid #000000;
+  }
+
+  .product-main-info {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

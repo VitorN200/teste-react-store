@@ -8,7 +8,7 @@ function CartContainer() {
     const { cart, removeFromCart, clearCart } = useCart();
 
     function handleBuy() {
-        alert("Compra realizada com sucesso!");
+        alert("Carrinho esvaziado :(");
         clearCart();
     }
 
