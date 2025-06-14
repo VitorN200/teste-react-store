@@ -1,6 +1,8 @@
 import { MdDelete } from 'react-icons/md';
 import { useCart } from "../contexts/CartContext";
 
+import '../styles/CartContainer.css';
+
 function CartContainer() {
 
     const { cart, removeFromCart, clearCart } = useCart();
@@ -12,8 +14,6 @@ function CartContainer() {
 
     return (
         <div className="cart-container">
-            
-            {cart.length === 0 && <p className="empty-cart">Seu carrinho está vazio</p>}
 
             {cart.map(product => (
                 <div key={product.id} className="cart-card">
@@ -33,17 +33,21 @@ function CartContainer() {
                 </div>
             ))}
 
-            {cart.length > 0 && (
-                <div className="cart-summary">
-                    <h2 className="summary-title">Resumo do Pedido</h2>
-                    <p className="summary-total">
+            <div className="cart-summary">
+                {cart.length === 0 ? (
+                    <h2>Seu carrinho está vazio</h2>
+                    ) : (
+                    <>
+                        <h2 className="summary-title">Resumo do Pedido</h2>
+                        <p className="summary-total">
                         Total: R$ {cart.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2)}
-                    </p>
-                    <button className="clear-cart-button" onClick={handleBuy}>
+                        </p>
+                        <button className="clear-cart-button" onClick={handleBuy}>
                         Limpar Carrinho
-                    </button>
-                </div>
-            )}
+                        </button>
+                    </>
+                )}
+            </div>
         </div>
     );
 }

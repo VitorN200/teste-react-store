@@ -2,13 +2,14 @@ import { useState } from 'react';
 import { MdAdd } from 'react-icons/md';
 import { useCart } from "../contexts/CartContext";
 
+import '../styles/ProductDetails.css';
+
 function ProductDetails({product, loading}) {
     const { addToCart } = useCart();
     const [quantity, setQuantity] = useState(1);
 
     const handleAddToCart = () => {
         addToCart(product, quantity);
-        alert("Produto adicionado ao carrinho!");
     };
 
     if (loading) {

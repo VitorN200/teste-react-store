@@ -1,6 +1,8 @@
 import { FaArrowLeft } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
+import '../styles/RedirectArrow.css'
+
 function RedirectArrow() {
 
 return (

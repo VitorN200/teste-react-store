@@ -1,0 +1,7 @@
+.redirect-arrow {
+    display: flex;
+    width: 90%;
+    max-width: 750px;
+    margin: 20 0 20 0;
+    transition: transform 0.3s ease;
+}

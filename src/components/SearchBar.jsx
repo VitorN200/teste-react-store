@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useCart } from "../contexts/CartContext";
 import { useState } from "react";
 
+import "../styles/SearchBar.css";
+
 function SearchBar({loadProducts}) {
 
     const [search, setSearch] = useState("");
@@ -27,11 +29,13 @@ return (
                 <FiSearch size={20} />
             </button>
         </form>
-        <Link to="/cart" className="cart-link">
-            <button className="cart-button">
-                <FiShoppingCart size={40} />
-            </button>
-            <span className="cart-badge">{cart.length}</span>
+        <Link to="/cart">
+            <div className="cart-icon-container">
+                <button className="cart-button">
+                    <FiShoppingCart size={40} />
+                </button>
+                <span className="cart-badge">{cart.length}</span>
+            </div>
         </Link>
     </div>
 )
