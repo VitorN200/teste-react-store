@@ -30,4 +30,4 @@ function ProductsContainer({products}) {
   );
 }
 
-export default ProductsContainer
+export default ProductsContainer;

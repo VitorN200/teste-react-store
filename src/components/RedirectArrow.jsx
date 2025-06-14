@@ -14,5 +14,5 @@ return (
     )
 }
 
-export default RedirectArrow
+export default RedirectArrow;
    
