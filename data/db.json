@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Furadeira Elétrica 500W",
+      "description": "Furadeira elétrica portátil com potência de 500W, ideal para trabalhos domésticos.",
+      "price": 249.90,
+      "image": "https://images.unsplash.com/photo-1572981779307-38b8cabb2407"
+    },
+    {
+      "id": 2,
+      "name": "Camisa Polo Masculina",
+      "description": "Camisa polo masculina, 100% algodão, confortável e estilosa.",
+      "price": 79.90,
+      "image": "https://images.unsplash.com/photo-1717127354833-e4d10625d3e7"
+    },
+    {
+      "id": 3,
+      "name": "Smartphone XPhone 256GB",
+      "description": "Smartphone XPhone com 256GB de armazenamento, câmera dupla e tela AMOLED.",
+      "price": 3299.00,
+      "image": "https://images.unsplash.com/photo-1596558450268-9c27524ba856"
+    },
+    {
+      "id": 4,
+      "name": "Fone de Ouvido Bluetooth",
+      "description": "Fone de ouvido sem fio com cancelamento de ruído e autonomia de até 20 horas.",
+      "price": 499.90,
+      "image": "https://images.unsplash.com/photo-1674989844487-722ec77b9b81"
+    },
+    {
+      "id": 5,
+      "name": "Liquidificador 900W Turbo",
+      "description": "Liquidificador de alta potência com 12 velocidades, copo de vidro e função pulsar.",
+      "price": 189.90,
+      "image": "https://images.unsplash.com/photo-1585237672814-8f85a8118bf6"
+    },
+    {
+      "id": 6,
+      "name": "Sofá Retrátil 3 Lugares",
+      "description": "Sofá retrátil e reclinável de 3 lugares, tecido suede, super confortável.",
+      "price": 1899.00,
+      "image": "https://plus.unsplash.com/premium_photo-1673548917477-4c0c8889b439"
+    },
+    {
+      "id": 7,
+      "name": "Notebook ProBook 16GB RAM",
+      "description": "Notebook com processador i7, 16GB de RAM e SSD de 512GB. Ideal para trabalho e estudos.",
+      "price": 4599.00,
+      "image": "https://images.unsplash.com/photo-1536724609414-5f000e9a2745"
+    },
+    {
+      "id": 8,
+      "name": "Máquina de Lavar 12kg",
+      "description": "Máquina de lavar roupas automática, capacidade de 12kg, com vários modos de lavagem.",
+      "price": 2399.00,
+      "image": "https://plus.unsplash.com/premium_photo-1675937428916-535f85f41c61"
+    },
+    {
+      "id": 9,
+      "name": "Tênis Esportivo Running Pro",
+      "description": "Tênis esportivo leve, respirável, com solado antiderrapante, ideal para corridas.",
+      "price": 349.90,
+      "image": "https://images.unsplash.com/photo-1560769629-975ec94e6a86"
+    },
+    {
+      "id": 10,
+      "name": "Relógio Smartwatch FitBand",
+      "description": "Relógio smartwatch com monitoramento de batimentos, passos, sono e notificações.",
+      "price": 299.90,
+      "image": "https://images.unsplash.com/photo-1682258634152-170a536a8185"
+    }
+  ]
+}
