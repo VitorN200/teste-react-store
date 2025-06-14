@@ -12,6 +12,9 @@ function CartContainer() {
 
     return (
         <div className="cart-container">
+            
+            {cart.length === 0 && <p className="empty-cart">Seu carrinho está vazio</p>}
+
             {cart.map(product => (
                 <div key={product.id} className="cart-card">
                     <img src={product.image} alt={product.name} className="cart-image" />
@@ -29,8 +32,6 @@ function CartContainer() {
                     </div>
                 </div>
             ))}
-            
-            {cart.length === 0 && <p className="empty-cart">Seu carrinho está vazio</p>}
 
             {cart.length > 0 && (
                 <div className="cart-summary">
@@ -39,7 +40,7 @@ function CartContainer() {
                         Total: R$ {cart.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2)}
                     </p>
                     <button className="clear-cart-button" onClick={handleBuy}>
-                        Comprar
+                        Limpar Carrinho
                     </button>
                 </div>
             )}

@@ -1,6 +1,6 @@
 import Header from "../components/Header"
 import SearchBar from "../components/SearchBar"
-import ProductContainer from "../components/ProductContainer"
+import ProductsContainer from "../components/ProductsContainer"
 import { useState, useEffect } from "react";
 import api from "../api";
 
@@ -25,7 +25,7 @@ function ProductList() {
       <div className='main-container'>
         <Header title="Lista de Produtos" />
         <SearchBar loadProducts={loadProducts}/>
-        <ProductContainer products={products}/> 
+        <ProductsContainer products={products}/> 
       </div>
   )
 }

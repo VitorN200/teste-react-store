@@ -4,12 +4,12 @@ const CartContext = createContext();
 
 export function CartProvider({ children }) {
     const [cart, setCart] = useState(() => {
-        const storedCart = localStorage.getItem("cart");
+        const storedCart = sessionStorage.getItem("cart");
         return storedCart ? JSON.parse(storedCart) : [];
     });
 
     useEffect(() => {
-        localStorage.setItem("cart", JSON.stringify(cart));
+     sessionStorage.setItem("cart", JSON.stringify(cart));
     }, [cart]);
 
     const addToCart = (product, quantity = 1) => {
