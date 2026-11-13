@@ -13,6 +13,8 @@ O objetivo é permitir que o usuário:
 - Gerencie o carrinho removendo itens;
 - Veja o valor total da compra.
 
+Link para visualização: https://teste-react-store-production.up.railway.app/
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
