@@ -4,7 +4,7 @@ import { useCart } from "../contexts/CartContext";
 import { useState } from "react";
 import CartIcon from "./CartIcon";
 
-import "../styles/SearchBar.css";
+import "../styles/Searchbar.css";
 
 function SearchBar({loadProducts}) {
 
