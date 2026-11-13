@@ -66,6 +66,17 @@ npm run dev
 
 ➡️ O projeto React ficará disponível normalmente na porta `http://localhost:5173` (ou outra porta, dependendo da sua configuração).
 
+### 🌍 Modo produção (como roda no deploy)
+
+Em produção, um único servidor (`server.js`) entrega o front-end compilado e a API do JSON Server em `/api`:
+
+```bash
+npm run build
+npm start
+```
+
+➡️ Acesse `http://localhost:3000`. A variável `PORT` define a porta, o que permite hospedar em plataformas como o Railway.
+
 ---
 
 ## 🌐 Rotas da API (JSON Server)
