@@ -77,7 +77,17 @@ npm run build
 npm start
 ```
 
-➡️ Acesse `http://localhost:3000`. A variável `PORT` define a porta, o que permite hospedar em plataformas como o Railway.
+➡️ Acesse `http://localhost:3000`. A variável `PORT` define a porta, o que permite hospedar em plataformas que mantêm um servidor ligado, como o Railway.
+
+### ▲ Deploy na Vercel
+
+O projeto também está preparado para a Vercel, que não mantém um servidor ligado:
+
+- O front-end (Vite) é servido como site estático.
+- A API fake roda como **função serverless** em `api/index.js`, carregando o `data/db.json` em memória e em modo somente leitura (a aplicação só consulta produtos; o carrinho fica no `sessionStorage`).
+- O `vercel.json` encaminha `/api/*` para a função e as demais rotas para o `index.html`, permitindo abrir diretamente URLs como `/product/3` e `/cart`.
+
+Para publicar, importe o repositório na Vercel. Nenhuma variável de ambiente é necessária.
 
 ---
 
